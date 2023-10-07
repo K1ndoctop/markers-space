@@ -39,27 +39,42 @@ const Navbar = () => {
             </li>
             {checkUserLogin() ? (
               <li className="flex">
-                <NavLink
-                  href="/"
-                  onClick={() => {
-                    logout();
-                    navigate("/");
-                  }}
+                <a
+                  rel="noopener noreferrer"
+                  className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
                 >
-                  Logout
-                </NavLink>
+                  <NavLink
+                    href="/"
+                    onClick={() => {
+                      logout();
+                      navigate("/");
+                    }}
+                  >
+                    Logout
+                  </NavLink>
+                </a>
               </li>
             ) : (
               <>
                 <li className="flex">
-                  <NavLink href="/" onClick={() => navigate("/login")}>
-                    Login
-                  </NavLink>
+                  <a
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+                  >
+                    <NavLink href="/" onClick={() => navigate("/login")}>
+                      Login
+                    </NavLink>
+                  </a>
                 </li>
                 <li className="flex">
-                  <NavLink href="/" onClick={() => navigate("/register")}>
-                    Register
-                  </NavLink>
+                  <a
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+                  >
+                    <NavLink href="/" onClick={() => navigate("/register")}>
+                      Register
+                    </NavLink>
+                  </a>
                 </li>
               </>
             )}
@@ -68,7 +83,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
               >
-                Linkssssssssssss
+                Link
               </a>
             </li>
           </ul>

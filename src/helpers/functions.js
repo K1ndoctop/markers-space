@@ -1,15 +1,15 @@
-export const addDataToLocalStorage = (user, tokens) => {
-  localStorage.setItem("user", JSON.stringify(user));
-  localStorage.setItem("tokens", JSON.stringify(tokens));
+export const addDataToLocalStorage = (user) => {
+  localStorage.setItem("name", JSON.stringify(user.name));
+  localStorage.setItem("password", JSON.stringify(user.password));
 };
 
 export const logout = () => {
-  localStorage.removeItem("user");
-  localStorage.removeItem("tokens");
+  localStorage.removeItem("name");
+  localStorage.removeItem("password");
 };
 
 export const checkUserLogin = () => {
-  const user = localStorage.getItem("user");
+  const user = localStorage.getItem("name");
   if (!user) return false;
   return true;
 };

@@ -44,7 +44,6 @@ export const loginAccount = createAsyncThunk(
     if (oneUser) {
       alert("Такого пользователя нету в базе данных");
     }
-
     return oneUser;
   }
 );
