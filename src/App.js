@@ -1,11 +1,15 @@
 import React from "react";
 import MainRoutes from "./routing/MainRoutes";
+import Navbar from "./components/home/Navbar";
+import Footer from "./components/home/Footer";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Navbar />
       <MainRoutes />
-    </div>
+      <Footer />
+    </>
   );
 };
 
