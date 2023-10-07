@@ -7,7 +7,7 @@ const Сountries = () => {
     checkUserLogin();
   });
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-700">
       <svg
         baseprofile="tiny"
         fill="#ececec"
