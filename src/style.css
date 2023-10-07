@@ -1,9 +1,9 @@
 .active{
-    color: rgb(74 222 128 );
+    color: rgb(32, 44, 118);
     border-color: rgb(74 222 128);
 }
 svg path{
-    fill: #004f00;
+    fill: #f50d0d;
     stroke: #eee;
     stroke-width: .25;
 }
@@ -13,5 +13,10 @@ svg path:hover{
     cursor: pointer;
 }
 body{
-    background-color: #8489d8;
+    /* background-color: #8489d8; */
+    font-family: 'Alfa Slab One', cursive;
+}
+
+a:hover{
+    color: #006284;
 }
