@@ -1,7 +1,12 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { NavLink, useNavigate } from "react-router-dom";
+import { checkUserLogin, logout, updateToken } from "../../helpers/functions";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   return (
     <div>
       <header className="p-4 dark:bg-blue-900 text-gray-100">
@@ -32,22 +37,44 @@ const Navbar = () => {
                 <NavLink to={"/"}>Logo</NavLink>
               </a>
             </li>
-            <li className="flex">
-              <a
-                rel="noopener noreferrer"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-              >
-                <NavLink to={"/register"}>Register</NavLink>
-              </a>
-            </li>
-            <li className="flex">
-              <a
-                rel="noopener noreferrer"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-              >
-                <NavLink to={"/login"}>Login</NavLink>
-              </a>
-            </li>
+            {checkUserLogin() ? (
+              <li className="flex">
+                <a
+                  rel="noopener noreferrer"
+                  className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+                >
+                  <button
+                    onClick={() => {
+                      logout();
+                      navigate("/");
+                    }}
+                  >
+                    Logout
+                  </button>
+                </a>
+              </li>
+            ) : (
+              <>
+                <li className="flex">
+                  <a
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+                  >
+                    <button onClick={() => navigate("/login")}>Login</button>
+                  </a>
+                </li>
+                <li className="flex">
+                  <a
+                    rel="noopener noreferrer"
+                    className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+                  >
+                    <button onClick={() => navigate("/register")}>
+                      Register
+                    </button>
+                  </a>
+                </li>
+              </>
+            )}
             <li className="flex">
               <a
                 rel="noopener noreferrer"

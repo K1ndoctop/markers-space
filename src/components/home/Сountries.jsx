@@ -1,10 +1,14 @@
-import React from 'react'
-import style from '../../style.css'
+import React, { useEffect } from "react";
+import style from "../../style.css";
+import { checkUserLogin } from "../../helpers/functions";
 
 const Сountries = () => {
+  useEffect(() => {
+    checkUserLogin();
+  });
   return (
-    <div className='w-full'>
-        <svg
+    <div className="w-full">
+      <svg
         baseprofile="tiny"
         fill="#ececec"
         height="857"
@@ -2071,7 +2075,7 @@ const Сountries = () => {
         <circle cx="1798.2" cy="719.3" id="2"></circle>
       </svg>
     </div>
-  )
-}
+  );
+};
 
-export default Сountries
+export default Сountries;
