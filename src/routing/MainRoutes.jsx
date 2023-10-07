@@ -5,6 +5,7 @@ import Login from "../components/account/Login";
 import Register from "../components/account/Register";
 import CardCreate from "../components/card/CardCreate";
 import CardEdit from "../components/card/CardEdit";
+import CardList from "../components/card/CardList";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -25,11 +26,16 @@ const MainRoutes = () => {
     },
     {
       id: 4,
+      path: "/cards",
+      element: <CardList />,
+    },
+    {
+      id: 5,
       path: "card-create",
       element: <CardCreate />,
     },
     {
-      id: 5,
+      id: 6,
       path: "card-edit",
       element: <CardEdit />,
     },

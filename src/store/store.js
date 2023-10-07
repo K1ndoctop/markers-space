@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import accountReducer from "./account/accountSlice";
+import eventReducer from "./event/eventSlice";
 
 export default configureStore({
   middleware: (getDefaultMiddleware) =>
@@ -8,5 +9,6 @@ export default configureStore({
     }),
   reducer: {
     account: accountReducer,
+    events: eventReducer,
   },
 });

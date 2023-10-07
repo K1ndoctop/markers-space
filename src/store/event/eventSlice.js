@@ -2,16 +2,19 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getEventCard } from "./eventAction";
 
 const eventSlice = createSlice({
-  name: "event",
+  name: "events",
   initialState: {
     loading: false,
-    event: null,
+    events: [],
   },
   reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getEventCard.fulfilled, (state, action) => {
       state.loading = false;
-      state.event = action.payload;
+      state.events = action.payload;
+      console.log(state.events);
     });
   },
 });
+
+export default eventSlice.reducer;
