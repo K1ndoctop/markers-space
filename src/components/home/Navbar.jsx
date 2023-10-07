@@ -35,6 +35,7 @@ const Navbar = () => {
                 className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
               >
                 <NavLink to={"/"}>Logo</NavLink>
+                <NavLink to={"/add"}>Add Todo</NavLink>
               </a>
             </li>
             {checkUserLogin() ? (
