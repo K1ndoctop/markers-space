@@ -2,6 +2,8 @@ import React from "react";
 import MainRoutes from "./routing/MainRoutes";
 import Navbar from "./components/home/Navbar";
 import Footer from "./components/home/Footer";
+import axios from "axios";
+import { EVENT_API } from "./helpers/consts";
 
 const App = () => {
   return (

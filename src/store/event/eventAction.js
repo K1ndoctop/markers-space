@@ -24,3 +24,15 @@ export const deleteEvent = createAsyncThunk(
     dispatch(getEventCard());
   }
 );
+
+export const getOneEvent = createAsyncThunk(
+  "events/getOneEvent",
+  async (id) => {
+    const oneEvent = await axios.get(`${EVENT_API}/${id}`);
+    return oneEvent;
+  }
+);
+
+export const editEvent = createAsyncThunk("events/editEvent", async (event) => {
+  await axios.patch(`${EVENT_API}/${event}`, event);
+});
