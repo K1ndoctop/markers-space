@@ -4,7 +4,7 @@ const NewsCart = () => {
   return (
     <div>
       <section className="p-4 lg:p-8  text-gray-100">
-        <div className="container mx-auto space-y-12">
+        <div className=" mx-auto space-y-12">
           <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
             <img
               src="https://gdb.rferl.org/01000000-0aff-0242-ce64-08dba9f3e1e8_w1023_r1_s.jpg"
