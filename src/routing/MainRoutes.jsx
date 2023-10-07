@@ -18,7 +18,7 @@ const MainRoutes = () => {
     },
     {
       id: 3,
-      path: "register",
+      path: "/register",
       element: <Register />,
     },
   ];
