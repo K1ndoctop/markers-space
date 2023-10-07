@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
-import { checkUserLogin, logout, updateToken } from "../../helpers/functions";
+import { checkUserLogin, logout } from "../../helpers/functions";
 
 const Navbar = () => {
   const dispatch = useDispatch();

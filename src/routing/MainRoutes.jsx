@@ -3,6 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import Login from "../components/account/Login";
 import Register from "../components/account/Register";
+import CardCreate from "../components/card/CardCreate";
+import CardEdit from "../components/card/CardEdit";
+import CardList from "../components/card/CardList";
 import MapStrike from "../components/home/strikeCountries/MapStrike";
 
 const MainRoutes = () => {
@@ -24,6 +27,22 @@ const MainRoutes = () => {
     },
     {
       id: 4,
+
+      path: "/cards",
+      element: <CardList />,
+    },
+    {
+      id: 5,
+      path: "card-create",
+      element: <CardCreate />,
+    },
+    {
+      id: 6,
+      path: "card-edit",
+      element: <CardEdit />,
+    },
+    {
+      id:7,
       path: "/map-strike",
       element: <MapStrike />,
     },
