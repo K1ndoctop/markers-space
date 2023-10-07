@@ -68,7 +68,10 @@ const Register = () => {
 
                 <button
                   className="w-full text-center py-3 rounded bg-pink-500 font-bold text-white hover:bg-pink-700"
-                  onClick={() => dispatch(registerAccount(user))}
+                  onClick={() => {
+                    dispatch(registerAccount(user));
+                    navigate("/");
+                  }}
                 >
                   Registration
                 </button>

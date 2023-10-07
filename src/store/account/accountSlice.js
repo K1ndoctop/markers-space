@@ -35,9 +35,8 @@ const accountSlice = createSlice({
       })
       .addCase(loginAccount.fulfilled, (state, action) => {
         state.loading = false;
-        state.user = action.payload.oneUser;
-        addDataToLocalStorage(action.payload.oneUser);
-        console.log(state.user);
+        state.user = action.payload.name;
+        addDataToLocalStorage(action.payload.name);
         // updateToken();
         // action.payload.navigate("/");
       })

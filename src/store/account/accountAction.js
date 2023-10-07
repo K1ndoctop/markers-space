@@ -29,7 +29,7 @@ export const registerAccount = createAsyncThunk(
   "account/registerAccount",
   async (user) => {
     const res = await axios.post(ACCOUNT_API, user);
-    console.log(res);
+    console.log(user);
   }
 );
 
@@ -41,9 +41,10 @@ export const loginAccount = createAsyncThunk(
       (item) => user.name === item.name && user.password === item.password
     );
 
-    if (oneUser) {
+    if (!oneUser) {
       alert("Такого пользователя нету в базе данных");
     }
+
     return oneUser;
   }
 );

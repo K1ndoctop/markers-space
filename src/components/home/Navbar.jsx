@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
+import { useDispatch } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { checkUserLogin, logout, updateToken } from "../../helpers/functions";
 
@@ -43,15 +43,14 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
                 >
-                  <NavLink
-                    href="/"
+                  <button
                     onClick={() => {
                       logout();
                       navigate("/");
                     }}
                   >
                     Logout
-                  </NavLink>
+                  </button>
                 </a>
               </li>
             ) : (
@@ -61,9 +60,7 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
                   >
-                    <NavLink href="/" onClick={() => navigate("/login")}>
-                      Login
-                    </NavLink>
+                    <button onClick={() => navigate("/login")}>Login</button>
                   </a>
                 </li>
                 <li className="flex">
@@ -71,9 +68,9 @@ const Navbar = () => {
                     rel="noopener noreferrer"
                     className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
                   >
-                    <NavLink href="/" onClick={() => navigate("/register")}>
+                    <button onClick={() => navigate("/register")}>
                       Register
-                    </NavLink>
+                    </button>
                   </a>
                 </li>
               </>

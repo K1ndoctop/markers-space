@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginAccount } from "../../store/account/accountAction";
 import { clearStatusState } from "../../store/account/accountSlice";
+import { checkUserLogin } from "../../helpers/functions";
 
 const Login = () => {
   const [user, setUser] = useState({
@@ -68,7 +69,10 @@ const Login = () => {
 
                 <button
                   className="w-full text-center py-3 rounded bg-pink-500 font-bold text-white hover:bg-pink-700"
-                  onClick={() => dispatch(loginAccount(user))}
+                  onClick={() => {
+                    dispatch(loginAccount(user));
+                    navigate("/");
+                  }}
                 >
                   login
                 </button>
