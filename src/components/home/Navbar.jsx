@@ -68,7 +68,7 @@ const Navbar = () => {
                     navigate("/");
                   }}
                 >
-                    Logout
+                  Logout
                 </a>
               </li>
             ) : (
@@ -79,7 +79,7 @@ const Navbar = () => {
                     className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
                     onClick={() => navigate("/login")}
                   >
-                  Login
+                    Login
                   </a>
                 </li>
                 <li className="flex">
@@ -88,7 +88,7 @@ const Navbar = () => {
                     className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
                     onClick={() => navigate("/register")}
                   >
-                      Register
+                    Register
                   </a>
                 </li>
               </>
