@@ -3,7 +3,7 @@ import React from "react";
 const NewsCart = () => {
   return (
     <div>
-      <section className="p-4 lg:p-8 bg-gray-800 text-gray-100">
+      <section className="p-4 lg:p-8  text-gray-100">
         <div className="container mx-auto space-y-12">
           <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
             <img
