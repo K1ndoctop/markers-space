@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import Login from "../components/account/Login";
 import Register from "../components/account/Register";
+import CardCreate from "../components/card/CardCreate";
+import CardEdit from "../components/card/CardEdit";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -20,6 +22,16 @@ const MainRoutes = () => {
       id: 3,
       path: "/register",
       element: <Register />,
+    },
+    {
+      id: 4,
+      path: "card-create",
+      element: <CardCreate />,
+    },
+    {
+      id: 5,
+      path: "card-edit",
+      element: <CardEdit />,
     },
   ];
   return (

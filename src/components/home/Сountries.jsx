@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
-import style from "../../style.css";
-import { checkUserLogin } from "../../helpers/functions";
+import React from "react";
 
 const Сountries = () => {
-  useEffect(() => {
-    checkUserLogin();
-  });
   return (
-    <div className="w-full bg-gray-700">
+    <div className="w-full">
       <svg
         baseprofile="tiny"
         fill="#ececec"
