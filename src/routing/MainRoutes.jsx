@@ -6,6 +6,7 @@ import Register from "../components/account/Register";
 import CardCreate from "../components/card/CardCreate";
 import CardEdit from "../components/card/CardEdit";
 import CardList from "../components/card/CardList";
+import MapStrike from "../components/home/strikeCountries/MapStrike";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -26,6 +27,7 @@ const MainRoutes = () => {
     },
     {
       id: 4,
+
       path: "/cards",
       element: <CardList />,
     },
@@ -38,6 +40,11 @@ const MainRoutes = () => {
       id: 6,
       path: "card-edit",
       element: <CardEdit />,
+    },
+    {
+      id:7,
+      path: "/map-strike",
+      element: <MapStrike />,
     },
   ];
   return (
