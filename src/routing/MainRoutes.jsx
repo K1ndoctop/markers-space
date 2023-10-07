@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage";
 import Login from "../components/account/Login";
 import Register from "../components/account/Register";
 import CardCreate from "../components/card/CardCreate";
+import MapStrike from "../components/home/strikeCountries/MapStrike";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -26,6 +27,11 @@ const MainRoutes = () => {
       id: 4,
       path: "/create",
       element: <CardCreate />,
+    },
+    {
+      id: 4,
+      path: "/map-strike",
+      element: <MapStrike />,
     },
   ];
   return (
