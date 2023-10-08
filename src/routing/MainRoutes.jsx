@@ -11,6 +11,7 @@ import Brazil from "../components/home/strikeCountries/Brazil";
 import Turkey from "../components/home/strikeCountries/Turkey";
 import Kyrgyzstan from "../components/home/strikeCountries/Kyrgyzstan";
 import Russia from "../components/home/strikeCountries/Russia";
+import SolarExplorer from "../planets/SolarExplorer";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -46,7 +47,7 @@ const MainRoutes = () => {
       element: <CardEdit />,
     },
     {
-      id:7,
+      id: 7,
       path: "/map-strike",
       element: <MapStrike />,
     },
@@ -69,6 +70,11 @@ const MainRoutes = () => {
       id: 8,
       path: "/russia",
       element: <Russia />,
+    },
+    {
+      id: 9,
+      path: "/planets",
+      element: <SolarExplorer/>,
     },
   ];
   return (
