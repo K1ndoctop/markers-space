@@ -1,8 +1,10 @@
 import React from "react";
-import { deleteEvent } from "../../store/event/eventAction";
+import { deleteEvent, getOneEvent } from "../../store/event/eventAction";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const CardItem = ({ event }) => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   return (
     <div className="w-1/4 m-4 p-2 flex-wrap bg-blue-400 rounded-lg relative">
@@ -14,7 +16,14 @@ const CardItem = ({ event }) => {
       </ul>
       <h3 className="m-2">{event.description}</h3>
       <div className=" flex flex-row justify-around">
-        <button className="bg-gray-500 w-1/4 rounded-md">Edit</button>
+        <button
+          onClick={() => {
+            navigate("/card-edit");
+          }}
+          className="bg-gray-500 w-1/4 rounded-md"
+        >
+          Edit
+        </button>
         <button
           onClick={() => dispatch(deleteEvent(event.id))}
           className="bg-gray-500 w-1/4 rounded-md"
