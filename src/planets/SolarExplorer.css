@@ -165,7 +165,7 @@ body .logo {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 100;
-  letter-spacing: 4px;  
+  letter-spacing: 4px;
 }
 body .logo span {
   font-size: 12px;
@@ -258,7 +258,7 @@ body label.menu .preview {
   height: 60px;
   background: yellow;
   float: left;
-  background-size: auto 100% ;
+  background-size: auto 100%;
   position: absolute;
   border-radius: 100px;
   box-shadow: 0 -13px 10px 2px black inset;
@@ -426,6 +426,8 @@ body
   + div
   .solar_systm:nth-of-type(1)
   .planet_description {
+    color: black;
+    font-size: 40px !important;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -723,6 +725,7 @@ body
   + div
   .solar_systm:nth-of-type(2)
   .planet_description {
+    color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -1070,6 +1073,7 @@ body
   + div
   .solar_systm:nth-of-type(3)
   .planet_description {
+    color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -1469,6 +1473,7 @@ body
   + div
   .solar_systm:nth-of-type(4)
   .planet_description {
+  color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -1922,6 +1927,7 @@ body
   + div
   .solar_systm:nth-of-type(5)
   .planet_description {
+  color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -2431,6 +2437,7 @@ body
   + div
   .solar_systm:nth-of-type(6)
   .planet_description {
+  color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -2998,6 +3005,7 @@ body
   + div
   .solar_systm:nth-of-type(7)
   .planet_description {
+  color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -3625,6 +3633,7 @@ body
   + div
   .solar_systm:nth-of-type(8)
   .planet_description {
+  color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }
@@ -4314,6 +4323,7 @@ body
   + div
   .solar_systm:nth-of-type(9)
   .planet_description {
+  color: black;
   opacity: 1;
   transition: all 0.6s 2.6s;
 }

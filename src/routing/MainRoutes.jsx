@@ -12,7 +12,7 @@ import Turkey from "../components/home/strikeCountries/Turkey";
 import Kyrgyzstan from "../components/home/strikeCountries/Kyrgyzstan";
 import Russia from "../components/home/strikeCountries/Russia";
 import SolarExplorer from "../planets/SolarExplorer";
-
+import EarthScene from "../components/home/animation/EarthScene";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -74,7 +74,12 @@ const MainRoutes = () => {
     {
       id: 9,
       path: "/planets",
-      element: <SolarExplorer/>,
+      element: <SolarExplorer />,
+    },
+    {
+      id: 10,
+      path: "/sam",
+      element: <EarthScene />,
     },
   ];
   return (
