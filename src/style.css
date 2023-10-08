@@ -20,3 +20,7 @@ body{
 a:hover{
     color: #006284;
 }
+
+.newColor {
+    background-color: #08063f;
+}
