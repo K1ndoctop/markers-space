@@ -4,6 +4,10 @@ import HomePage from "../pages/HomePage";
 import Login from "../components/account/Login";
 import Register from "../components/account/Register";
 import MapStrike from "../components/home/strikeCountries/MapStrike";
+import Brazil from "../components/home/strikeCountries/Brazil";
+import Turkey from "../components/home/strikeCountries/Turkey";
+import Kyrgyzstan from "../components/home/strikeCountries/Kyrgyzstan";
+import Russia from "../components/home/strikeCountries/Russia";
 
 const MainRoutes = () => {
   const ROUTE = [
@@ -26,6 +30,26 @@ const MainRoutes = () => {
       id: 4,
       path: "/map-strike",
       element: <MapStrike />,
+    },
+    {
+      id: 5,
+      path: "/brazil",
+      element: <Brazil />,
+    },
+    {
+      id: 6,
+      path: "/turkey",
+      element: <Turkey />,
+    },
+    {
+      id: 7,
+      path: "/kyrgyzstan",
+      element: <Kyrgyzstan />,
+    },
+    {
+      id: 8,
+      path: "/russia",
+      element: <Russia />,
     },
   ];
   return (
