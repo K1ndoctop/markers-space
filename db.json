@@ -7,5 +7,16 @@
       "isAdmin": true
     }
   ],
-  "event": []
+  "event": [
+    {
+      "image": "1",
+      "name": "1",
+      "fullDescrip": "111",
+      "description": "ygyug",
+      "date": "uyg",
+      "place": "yg",
+      "category": "u",
+      "id": 1
+    }
+  ]
 }
