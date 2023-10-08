@@ -8,6 +8,7 @@ const Register = () => {
   const [user, setUser] = useState({
     name: "",
     password: "",
+    isAdmin: false,
   });
 
   const { loading, status } = useSelector((state) => state.account);

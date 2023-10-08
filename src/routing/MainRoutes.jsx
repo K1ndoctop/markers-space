@@ -32,7 +32,6 @@ const MainRoutes = () => {
     },
     {
       id: 4,
-
       path: "/cards",
       element: <CardList />,
     },

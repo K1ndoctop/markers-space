@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { addEventCard } from "../../store/event/eventAction";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const CardCreate = () => {
   const [event, setEvent] = useState({
     image: "",
     name: "",
+    fullDescrip: "",
     description: "",
     date: "",
     place: "",
   });
-
+  const navigate = useNavigate();
   const dispatch = useDispatch();
+
   return (
     <div className="w-1/3 bg-blue-800 m-auto my-12 p-4 rounded-lg">
       <div className="flex flex-col items-center">
@@ -27,6 +30,12 @@ const CardCreate = () => {
           type="text"
           placeholder="Name"
           onChange={(e) => setEvent({ ...event, name: e.target.value })}
+        />
+        <input
+          className="m-4 w-4/5 p-2 h-8 rounded-lg"
+          type="text"
+          placeholder="Full Description"
+          onChange={(e) => setEvent({ ...event, fullDescrip: e.target.value })}
         />
         <input
           className="m-4 w-4/5 p-2 h-8 rounded-lg"
@@ -48,7 +57,10 @@ const CardCreate = () => {
         />
         <button
           className="m-4 w-4/5 h-8 rounded-lg bg-gray-400 text-2xl font-bold"
-          onClick={() => dispatch(addEventCard(event))}
+          onClick={() => {
+            dispatch(addEventCard(event));
+            navigate("/cards");
+          }}
         >
           Add event
         </button>

@@ -8,6 +8,7 @@ const accountSlice = createSlice({
     user: null,
     loading: false,
     status: "",
+    isAdmin: null,
   },
   reducers: {
     clearStatusState: (state) => {
@@ -36,7 +37,9 @@ const accountSlice = createSlice({
       .addCase(loginAccount.fulfilled, (state, action) => {
         state.loading = false;
         state.user = action.payload.name;
+        state.isAdmin = action.payload.isAdmin;
         addDataToLocalStorage(action.payload.name);
+        console.log(state.isAdmin);
         // updateToken();
         // action.payload.navigate("/");
       })
