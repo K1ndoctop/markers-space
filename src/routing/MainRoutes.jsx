@@ -13,6 +13,7 @@ import Kyrgyzstan from "../components/home/strikeCountries/Kyrgyzstan";
 import Russia from "../components/home/strikeCountries/Russia";
 import SolarExplorer from "../planets/SolarExplorer";
 
+
 const MainRoutes = () => {
   const ROUTE = [
     {
