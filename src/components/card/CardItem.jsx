@@ -9,7 +9,7 @@ const CardItem = ({ event }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="w-1/4 z-10 m-6 p-6 flex-wrap bg-blue-400 rounded-3xl relative">
+    <div className="w-1/4 z-10 m-6 p-6 flex-wrap bg-gray-100 rounded-3xl relative">
       {event.image ? (
         <img
           className=" -z-10 w-full rounded-2xl border-white border-solid border-2"
@@ -28,6 +28,7 @@ const CardItem = ({ event }) => {
       <ul className="text-xs ml-2 text-gray-600">
         <li>{event.place}</li>
         <li>{event.date}</li>
+        <li>{event.category}</li>
       </ul>
       <h3 className="m-2">{event.description}</h3>
       <div className=" flex flex-row justify-around">
