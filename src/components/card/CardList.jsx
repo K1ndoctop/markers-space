@@ -14,7 +14,8 @@ const CardList = () => {
 
   return (
     <div>
-      <div className="flex flex-wrap justify-center my-32">
+      <h2 className="text-6xl text-white font-bold text-center">Actual News</h2>
+      <div className="flex flex-wrap justify-center my-20">
         {events.map((event) => (
           <CardItem key={event.id} event={event} />
         ))}
