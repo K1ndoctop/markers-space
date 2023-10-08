@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="sticky top-0">
       <header className="p-4 bg-black text-gray-100 mb-12 opacity-75">
         <div className="flex justify-between h-16 mx-auto">
           <a
