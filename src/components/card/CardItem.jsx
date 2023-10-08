@@ -14,7 +14,7 @@ const CardItem = ({ event }) => {
     <>
       <div
         onClick={() => dispatch(modalOpen())}
-        className="w-1/4 z-10 m-6 p-6 flex-wrap bg-gray-100 rounded-3xl relative"
+        className="w-1/4 z-10 m-4 p-6 flex-wrap bg-gray-100 rounded-3xl relative"
       >
         {event.image ? (
           <img
