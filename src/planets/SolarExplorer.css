@@ -19,6 +19,10 @@
   /* Likely future */
 }
 
+.body_space{
+  z-index: 100;
+}
+
 body .solar_systm .planet,
 body input[type="radio"][name="planet"]::after,
 body .overlay {
@@ -145,7 +149,7 @@ body input[type="radio"][name="planet"]::after {
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden;   */
   background: black;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -4760,7 +4764,7 @@ body .solar_systm .planet .trajectory {
 }
 body .solar_systm .planet.mercury {
   background-image: url("https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg") !important;
-  box-shadow: 0 -590px 150px rgb(125, 210, 29) inset,
+  box-shadow: 0 -590px 150px rgb(0, 0, 0) inset,
     0 0px 130px 40px rgba(234, 205, 199, 0.6) inset,
     0 0px 23px 4px rgba(234, 205, 199, 0.6) inset,
     0 -10px 130px rgba(188, 143, 127, 0.6);
@@ -4769,7 +4773,7 @@ body .solar_systm .planet.mercury {
 }
 body .solar_systm .planet.venus {
   background-image: url("https://nasa3d.arc.nasa.gov/shared_assets/images/ven0aaa2/ven0aaa2-copy-428-321.jpg");
-  box-shadow: 0 -590px 150px rgb(205, 63, 63) inset,
+  box-shadow: 0 -590px 150px rgb(17, 17, 17) inset,
     0 0px 130px 40px #ffcb9c inset, 0 0px 23px 4px #ffcb9c inset,
     0 -10px 130px #b85a07;
   position: absolute;
