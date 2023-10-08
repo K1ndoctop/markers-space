@@ -59,14 +59,14 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                rel="noopener noreferrer"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                Space
-              </a>
+              rel="noopener noreferrer"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
+              onClick={() => {
+                navigate("/planets");
+              }}
+            >
+              Space
+            </a>
               <a
                 rel="noopener noreferrer"
                 className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
@@ -76,6 +76,7 @@ const Navbar = () => {
               >
                 Information
               </a>
+              
             </li>
             {checkUserLogin() ? (
               <li className="flex">

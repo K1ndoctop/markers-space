@@ -1,4 +1,5 @@
 import React from "react";
+import DetailsCart from "./DetailsCart";
 
 const NewsCart = () => {
   return (
@@ -37,6 +38,7 @@ const NewsCart = () => {
               alt=""
             />
           </div>
+          <DetailsCart/>
           <div
           className="newColor flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse p-6 h-96 items-center">
             <img
