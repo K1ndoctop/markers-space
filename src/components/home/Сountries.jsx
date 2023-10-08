@@ -9,6 +9,7 @@ const Сountries = () => {
   useEffect(() => {
     checkUserLogin();
   });
+
   return (
     <div className="w-full mr-32">
       <svg
