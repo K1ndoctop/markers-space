@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { editEvent, getOneEvent } from "../../store/event/eventAction";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
 
 const CardEdit = () => {
   const { oneEvent } = useSelector((state) => state.events);
@@ -33,6 +32,12 @@ const CardEdit = () => {
           type="text"
           placeholder="Name"
           onChange={(e) => setEvent({ ...event, name: e.target.value })}
+        />
+        <input
+          className="m-4 w-4/5 p-2 h-8 rounded-lg"
+          type="text"
+          placeholder="Full Description"
+          onChange={(e) => setEvent({ ...event, fullDescrip: e.target.value })}
         />
         <input
           className="m-4 w-4/5 p-2 h-8 rounded-lg"

@@ -28,6 +28,7 @@ import axios from "axios";
 export const registerAccount = createAsyncThunk(
   "account/registerAccount",
   async (user) => {
+    const admin = user.name.find();
     const res = await axios.post(ACCOUNT_API, user);
     console.log(user);
   }

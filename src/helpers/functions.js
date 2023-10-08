@@ -1,3 +1,6 @@
+import axios from "axios";
+import { EVENT_API } from "./consts";
+
 export const addDataToLocalStorage = (name) => {
   localStorage.setItem("name", JSON.stringify(name));
 };
@@ -10,6 +13,12 @@ export const checkUserLogin = () => {
   const user = localStorage.getItem("name");
   if (!user) return false;
   return true;
+};
+
+export const getTotalPages = async (url) => {
+  const { data } = await axios.get(EVENT_API);
+  const totalPages = Math.ceil(data.length / 9);
+  return totalPages;
 };
 
 // export const updateToken = () => {
