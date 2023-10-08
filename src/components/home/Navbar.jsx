@@ -26,6 +26,15 @@ const Navbar = () => {
             aria-label="Back to homepage"
             className="flex items-center p-2"
           >
+            <a
+              rel="noopener noreferrer"
+              className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
+              onClick={() => {
+                navigate("/planets");
+              }}
+            >
+              Space
+            </a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -57,15 +66,6 @@ const Navbar = () => {
                 }}
               >
                 Home
-              </a>
-              <a
-                rel="noopener noreferrer"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                Space
               </a>
               <a
                 rel="noopener noreferrer"
