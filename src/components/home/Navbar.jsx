@@ -42,7 +42,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
               onClick={() => {
-                navigate("/");
+                navigate("animo");
               }}
             >
               Space
@@ -80,7 +80,7 @@ const Navbar = () => {
                 >
                   Login
                 </a>
-                </li>
+              </li>
               <li className="flex">
                 <a
                   rel="noopener noreferrer"
