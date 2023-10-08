@@ -137,11 +137,6 @@ function SolarExplorer() {
         <div className="solar">
           <div className="solar_systm">
             <div className="planet mercury">
-              {/* <img
-                src="https://www.solarsystemscope.com/images/textures/full/2k_makemake_fictional.jpg"
-                alt="mer"
-              />   */}
-
               <div className="planet_description mercury">
                 <h2>Planet</h2>
                 <h1>Mercury</h1>
@@ -157,7 +152,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -177,7 +171,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -202,7 +195,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -232,7 +224,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -266,7 +257,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
 
@@ -302,7 +292,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -337,7 +326,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -372,7 +360,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
           <div className="solar_systm">
@@ -392,7 +379,6 @@ function SolarExplorer() {
                   </a>
                 </label>
               </div>
-              {/* <div className="overlay"></div> */}
             </div>
           </div>
         </div>
