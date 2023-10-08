@@ -7,6 +7,7 @@ const eventSlice = createSlice({
     loading: false,
     events: [],
     oneEvent: null,
+    modal: false,
   },
   reducers: {},
   extraReducers: (builder) => {
@@ -22,4 +23,6 @@ const eventSlice = createSlice({
   },
 });
 
+export const { setSearchVal, changePage, changeCategories } =
+  eventSlice.actions;
 export default eventSlice.reducer;

@@ -31,7 +31,6 @@ const MainRoutes = () => {
     },
     {
       id: 4,
-
       path: "/cards",
       element: <CardList />,
     },
@@ -46,7 +45,7 @@ const MainRoutes = () => {
       element: <CardEdit />,
     },
     {
-      id:7,
+      id: 7,
       path: "/map-strike",
       element: <MapStrike />,
     },
