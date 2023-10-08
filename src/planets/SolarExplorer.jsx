@@ -3,8 +3,7 @@ import "../planets/SolarExplorer.css";
 
 function SolarExplorer() {
   return (
-    <>
-      <body>
+      <body className="body_space">
         <h1 className="logo">
           Solar explorer
           {/* <span>in only CSS</span> */}
@@ -933,7 +932,6 @@ function SolarExplorer() {
         </div>
         {/* end */}
       </body>
-    </>
   );
 }
 export default SolarExplorer;
