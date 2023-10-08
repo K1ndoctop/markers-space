@@ -74,15 +74,6 @@ const Navbar = () => {
                   navigate("/cards");
                 }}
               >
-                News
-              </a>
-              <a
-                rel="noopener noreferrer"
-                className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-2xl cursor-pointer"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
                 Information
               </a>
             </li>
