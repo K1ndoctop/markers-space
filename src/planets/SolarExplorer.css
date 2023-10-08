@@ -61,7 +61,7 @@ body .solar_systm .planet {
     box-shadow 0s 0s;
   background-size: 1140px 910px !important;
   top: auto;
-  bottom: -920px;
+  bottom: -720px;
 }
 /* body .solar_systm .planet .moon {
   height: 200px;
@@ -161,7 +161,7 @@ body .logo {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 100;
-  letter-spacing: 4px;
+  letter-spacing: 4px;  
 }
 body .logo span {
   font-size: 12px;
@@ -250,8 +250,8 @@ body label.menu.pluto h2 .pip {
   background: #ff8732;
 }
 body label.menu .preview {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   background: yellow;
   float: left;
   background-size: auto 100% ;
@@ -261,7 +261,7 @@ body label.menu .preview {
 }
 body label.menu .info {
   position: relative;
-  left: 50px;
+  left: 90px;
   top: 1px;
 }
 body label.menu h2,
