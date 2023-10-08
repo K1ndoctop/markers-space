@@ -8,7 +8,7 @@ const NewsCart = () => {
           <div 
           className="newColor flex flex-col overflow-hidden rounded-md p-8  shadow-sm lg:flex-row h-96 items-center">
             <img
-              src="https://gdb.rferl.org/01000000-0aff-0242-ce64-08dba9f3e1e8_w1023_r1_s.jpg"
+              src="https://www.5.ua/media/pictures/400x266/190482.jpg?t=1596524788"
               alt=""
               className="bg-gray-500 aspect-video w-1/4 h-full rounded-xl"
             />
@@ -33,14 +33,14 @@ const NewsCart = () => {
             </div>
             <img
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
-              src="https://i.gifer.com/Yg6D.gif"
+              src="https://i.pinimg.com/originals/5a/7c/be/5a7cbe8790fe471f178068bd6f99fa2c.gif"
               alt=""
             />
           </div>
           <div
           className="newColor flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse p-6 h-96 items-center">
             <img
-              src="https://gdb.rferl.org/5279ba86-8086-4a86-add0-71b778a3092e_cx0_cy8_cw0_w1023_r1_s.jpg"
+              src="https://hightech.fm/wp-content/uploads/2022/11/explosive-volcano-with-burning-lava-neon-light-dark-futuristic-nature-scene-3d-render.jpg"
               alt=""
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
             />
@@ -65,13 +65,13 @@ const NewsCart = () => {
             </div>
             <img
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
-              src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg"
+              src="https://99px.ru/sstorage/86/2020/09/image_862109201330121507887.gif"
               alt=""
             />
           </div>
           <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row newColor h-96 p-6">
             <img
-              src="https://source.unsplash.com/640x480/?3"
+              src="https://www.akchabar.kg/media/news/d4f8ad7e-0cd0-490f-a2ac-1fc701e9b199.jpg.850x445_q82_crop.jpg"
               alt=""
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
             />
@@ -92,14 +92,14 @@ const NewsCart = () => {
             </div>
             <img
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
-              src="https://assets.entrepreneur.com/content/3x2/2000/20200429211042-GettyImages-1164615296.jpeg"
+              src="https://i.gifer.com/BTe4.gif"
               alt=""
             />
           </div>
           <div 
           className="newColor flex flex-col overflow-hidden rounded-md p-8  shadow-sm lg:flex-row h-96 items-center">
             <img
-              src="https://gdb.rferl.org/01000000-0aff-0242-ce64-08dba9f3e1e8_w1023_r1_s.jpg"
+              src="http://www.qwrt.ru/images/2014/03/28/таяние-льда-Антарктики-956055.gif"
               alt=""
               className="bg-gray-500 aspect-video w-1/4 h-full rounded-xl"
             />
@@ -124,14 +124,14 @@ const NewsCart = () => {
             </div>
             <img
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
-              src="https://i.gifer.com/Yg6D.gif"
+              src="https://mir-znaniy.com/wp-content/uploads/2017/03/18414124_2dff8f9084060b3250055cf62c5d5aac_800.jpg"
               alt=""
             />
           </div>
           <div 
           className="newColor flex flex-col overflow-hidden rounded-md p-8  shadow-sm lg:flex-row h-96 items-center">
             <img
-              src="https://gdb.rferl.org/01000000-0aff-0242-ce64-08dba9f3e1e8_w1023_r1_s.jpg"
+              src="https://www.eg.ru/wp-content/uploads/2017/12/17324251306034508.jpg"
               alt=""
               className="bg-gray-500 aspect-video w-1/4 h-full rounded-xl"
             />
@@ -156,7 +156,7 @@ const NewsCart = () => {
             </div>
             <img
               className="bg-gray-500 aspect-video w-1/4 rounded-xl h-full"
-              src="https://i.gifer.com/Yg6D.gif"
+              src="https://i.gifer.com/E8pZ.gif "
               alt=""
             />
           </div>
