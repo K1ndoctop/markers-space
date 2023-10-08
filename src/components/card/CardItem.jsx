@@ -9,8 +9,21 @@ const CardItem = ({ event }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="w-1/4 m-4 p-2 flex-wrap bg-blue-400 rounded-lg relative">
-      <img className="w-full" src={event.image} alt={event.name} />
+    <div className="w-1/4 z-10 m-6 p-6 flex-wrap bg-blue-400 rounded-3xl relative">
+      {event.image ? (
+        <img
+          className=" -z-10 w-full rounded-2xl border-white border-solid border-2"
+          src={event.image}
+          alt={event.name}
+        />
+      ) : (
+        <img
+          className=" -z-10 w-full  rounded-2xl border-white border-solid border-2"
+          src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhpy1JDo_f8NLizXYSVQo3asiUwGdBS-FkUdtAL8M-5Hrv-B-a"
+          alt={event.name}
+        />
+      )}
+
       <h2 className="text-xl font-bold mt-2 mx-2">{event.name}</h2>
       <ul className="text-xs ml-2 text-gray-600">
         <li>{event.place}</li>

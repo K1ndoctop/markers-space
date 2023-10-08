@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { checkUserLogin, logout } from "../../helpers/functions";
 
 const Navbar = () => {
-  const { isAdmin, user } = useSelector((state) => state.account);
+  const { isAdmin, user, modal } = useSelector((state) => state.account);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   console.log(isAdmin);
@@ -18,7 +18,7 @@ const Navbar = () => {
           +
         </button>
       )}
-      <header className="p-4 bg-black text-gray-100 mb-12 opacity-75 sticky top-0 z-10">
+      <header className="p-4 bg-black text-gray-100 mb-12 opacity-75 sticky top-0 z-20">
         <div className="flex justify-between h-16 mx-auto">
           <a
             rel="noopener noreferrer"
