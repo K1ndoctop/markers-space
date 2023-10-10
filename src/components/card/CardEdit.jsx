@@ -42,6 +42,12 @@ const CardEdit = () => {
         <input
           className="m-4 w-4/5 p-2 h-8 rounded-lg"
           type="text"
+          placeholder="Category"
+          onChange={(e) => setEvent({ ...event, category: e.target.value })}
+        />
+        <input
+          className="m-4 w-4/5 p-2 h-8 rounded-lg"
+          type="text"
           placeholder="Description"
           onChange={(e) => setEvent({ ...event, description: e.target.value })}
         />

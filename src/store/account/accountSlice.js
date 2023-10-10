@@ -9,6 +9,7 @@ const accountSlice = createSlice({
     loading: false,
     status: "",
     isAdmin: null,
+    modal: false,
   },
   reducers: {
     clearStatusState: (state) => {
@@ -16,6 +17,12 @@ const accountSlice = createSlice({
     },
     clearUserState: (state) => {
       state.user = null;
+    },
+    modalOpen: (state) => {
+      state.modal = true;
+    },
+    modalClose: (state) => {
+      state.modal = false;
     },
   },
   extraReducers: (builder) => {
@@ -50,5 +57,6 @@ const accountSlice = createSlice({
   },
 });
 
-export const { clearStatusState, clearUserState } = accountSlice.actions;
+export const { clearStatusState, clearUserState, modalClose, modalOpen } =
+  accountSlice.actions;
 export default accountSlice.reducer;

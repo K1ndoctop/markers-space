@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 body {
-    /* overflow: scroll !important; */
-    /* overflow: hidden;     */
+  /* overflow: scroll !important; */
+  /* overflow: hidden;     */
 }
 body {
-  background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_zvezdy_chernyj_118255_1920x1080.jpg);
+  background-image: url(https://images.wallpaperscraft.ru/image/single/zvezdnoe_nebo_zvezdy_chernyj_118255_1920x1080.jpg) !important;
+  z-index: 1;
 }
