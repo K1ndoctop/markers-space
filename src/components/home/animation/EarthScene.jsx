@@ -1,4 +1,3 @@
-import { nanoid } from "@reduxjs/toolkit";
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import * as THREE from "three";
